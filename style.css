@@ -96,7 +96,6 @@ nav .cv {
 }
 .block {
     height: 180px;
-    /*width: calc(33.33% - 1.5%*6/9);*/
     margin-right: 1.5%;
     margin-bottom: 1.5%;
     overflow: hidden;
@@ -172,5 +171,16 @@ nav .cv {
     }
     to {
         
+    }
+}
+@media screen and (max-width: 779px) {
+    .wrapper .block {
+        width: 100%;
+    }
+    .wrapper .block:nth-child(6) {
+        order: 2;
+    }
+    .wrapper .block:nth-child(n+8):nth-child(-n+10) {
+        order: 2;
     }
 }
